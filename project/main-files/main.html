@@ -27,19 +27,126 @@
   <body>
     <header class="header" id="header">
       <nav class="navbar container">
-        <div class="left-section logo">
-          <a href="#" class="logo-section">
-            <img src="../thumbnails/icons/icons8-shoe-2.png" alt="no image" />
-            <span class="logo-text"> Shoe fire</span>
-          </a>
-        </div>
-        <div class="mid-section">
-            <div class="menu" id="menu">
-                
+        <div class="top-section">
+          <div class="right-top-section">
+            <div class="menu-1" id="menu-1">
+              <ul class="list">
+                <li class="list-item">
+                  <a href="#" class="list-link current">Find a store</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">Help</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">join us</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">Sign in</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="right-section"></div>
+
+        <div class="bottom-section">
+          <div class="left-section logo">
+            <a href="#" class="logo-section">
+              <img src="../thumbnails/icons/icons8-shoe-2.png" alt="no image" />
+              <span class="logo-text"> Shoe fire</span>
+            </a>
+          </div>
+          <div class="mid-section">
+            <div class="menu" id="menu">
+              <ul class="list">
+                <li class="list-item">
+                  <a href="#" class="list-link current">Home</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">men</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">women</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link">kids</a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"> new & featured</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-section">
+
+            <div class="search-form-container">
+              <form action="" class="form">
+                <input type="text" class="form-input" placeholder="search" />
+                <button class="btn form-btn" type="submit" title="submit">
+                  <i class="ri-search-line"></i>
+                </button>
+              </form>
+            </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button
+            type="button"
+            class="btn place-items-center"
+            id="theme-toggle-btn"
+            title="btn"
+          >
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+          <button class="cart btn" id="cart" title="Cart">
+            <i class="ri-shopping-cart-line"></i>
+          </button>
+
+          <button
+            type="button"
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+            title="btn"
+          >
+            <i class="ri-menu-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+
       </nav>
     </header>
+
+    <section class="shopping-section section section-header-offset">
+
+      <div class="all-categories" id="#category-all">
+        <button class="categories-btn">
+          categories
+          <i class="ri-arrow-down-line arrow-up"></i>
+          <i class="ri-arrow-up-line arrow-down"></i>
+        </button>
+        <div class="categories-menu">
+          <ul class="categories">
+            <li class="category">Nike</li>
+          </ul>
+          <ul class="categories">
+            <li class="category">Jordans</li>
+          </ul>
+          <ul class="categories">
+            <li class="category">sharks</li>
+          </ul>
+          <ul class="categories">
+            <li class="category">Official</li>
+          </ul>
+          <ul class="categories">
+            <li class="category">Casual</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script src="./main.js"></script>
   </body>
 </html>
