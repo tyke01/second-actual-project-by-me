@@ -77,7 +77,6 @@
             </div>
           </div>
           <div class="right-section">
-
             <div class="search-form-container">
               <form action="" class="form">
                 <input type="text" class="form-input" placeholder="search" />
@@ -86,11 +85,15 @@
                 </button>
               </form>
             </div>
-            </div>
           </div>
+        </div>
 
-          <div class="buttons">
-            <button
+        <div class="returns">
+          <a href="#" class="return-txt">Returns & orders</a>
+        </div>
+
+        <div class="buttons">
+          <button
             type="button"
             class="btn place-items-center"
             id="theme-toggle-btn"
@@ -99,7 +102,7 @@
             <i class="ri-sun-line sun-icon"></i>
             <i class="ri-moon-line moon-icon"></i>
           </button>
-          <button class="cart btn" id="cart" title="Cart">
+          <button class="cart-btn" id="cart" title="Cart">
             <i class="ri-shopping-cart-line"></i>
           </button>
 
@@ -112,19 +115,18 @@
             <i class="ri-menu-line open-menu-icon"></i>
             <i class="ri-close-line close-menu-icon"></i>
           </button>
-
+        </div>
       </nav>
     </header>
 
     <section class="shopping-section section section-header-offset">
-
-      <div class="all-categories" id="#category-all">
-        <button class="categories-btn">
-          categories
-          <i class="ri-arrow-down-line arrow-up"></i>
-          <i class="ri-arrow-up-line arrow-down"></i>
+      <div class="category-section">
+        <button type="button" class="categories-btn" id="category-toggle-btn">
+          <i class="ri-arrow-down-line arrow-up">categories</i>
+          <i class="ri-arrow-up-line arrow-down">categories</i>
         </button>
-        <div class="categories-menu">
+
+        <div class="category-menu" id="category-menu">
           <ul class="categories">
             <li class="category">Nike</li>
           </ul>
@@ -142,10 +144,184 @@
           </ul>
         </div>
       </div>
+
+      <div class="all-shopping-items d-grid">
+
+        <div class="products-container">
+          <div class="product-image-container">
+            <img
+              src="../thumbnails/cool/cool-2.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          <div class="product-specs">
+            <div class="product-name">
+              <p>White custom airforces - 1 pair</p>
+            </div>
+            <div class="items">
+              <p class="items-left">
+                60 items left
+              </p>
+              <div class="item-bar">
+                <div class="items-rem"></div>
+              </div>
+            </div>
+            <div class="product-rating-container">
+              <img
+                src="../thumbnails/ratings/rating-45.png"
+                alt="no image"
+                class="product-rating-stars"
+              />
+              <p class="rating-count">
+                87
+              </p>
+            </div>
+            <div class="offers">
+              <p class="offer-1">
+                price : 2800
+              </p>
+            </div>
+            <div class="product-price">
+              <p>Now shs 2500 </p>
+            </div>
+            <div class="product-quantity-container">
+              <select class="selector" name="select" id="select1" title="select">
+                <option selected value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="2"> 3</option>
+                <option value="2"> 4</option>
+                <option value="2"> 5</option>
+                <option value="2"> 6</option>
+                <option value="2"> 7</option>
+                <option value="2"> 8</option>
+                <option value="2"> 9</option>
+              </select>
+            </div>
+            <div class="added-to-cart">
+              <img src="../thumbnails/icons/checkmark.png" alt="">
+              added
+            </div>
+            <button class="add-to-cart-btn" title="cart">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <div class="products-container">
+          <div class="product-image-container">
+            <img
+              src="../thumbnails/cool/cool-3.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          <div class="product-specs">
+            <div class="product-name">
+              <p>Green Nikes  - 1 pair</p>
+            </div>
+            <div class="product-rating-container">
+              <img
+                src="../thumbnails/ratings/rating-45.png"
+                alt="no image"
+                class="product-rating-stars"
+              />
+              <p class="rating-count">
+                102
+              </p>
+            </div>
+            <div class="offers">
+              <p class="offer-1">
+                price : 4500
+              </p>
+            </div>
+            <div class="product-price">
+              <p>Now shs 3999 </p>
+            </div>
+            <div class="product-quantity-container">
+              <select class="selector" name="select" id="select2" title="select">
+                <option selected value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="2"> 3</option>
+                <option value="2"> 4</option>
+                <option value="2"> 5</option>
+                <option value="2"> 6</option>
+                <option value="2"> 7</option>
+                <option value="2"> 8</option>
+                <option value="2"> 9</option>
+              </select>
+            </div>
+  
+            <div class="added-to-cart">
+              <img src="../thumbnails/icons/checkmark.png" alt="">
+              added
+            </div>
+  
+            <button class="add-to-cart-btn" title="cart">
+              Add to cart
+            </button>
+          </div>
+
+        </div>
+
+        <div class="products-container">
+          <div class="product-image-container">
+            <img
+              src="../thumbnails/cool/cool-5.jpg"
+              alt=""
+              class="product-image"
+            />
+          </div>
+          <div class="product-specs">
+            <div class="product-name">
+              <p>White jordan 4 - 1 pair</p>
+            </div>
+            <div class="product-rating-container">
+              <img
+                src="../thumbnails/ratings/rating-45.png"
+                alt="no image"
+                class="product-rating-stars"
+              />
+              <p class="rating-count">
+                200
+              </p>
+            </div>
+            <div class="offers">
+              <p class="offer-1">
+                price : 2800
+              </p>
+            </div>
+            <div class="product-price">
+              <p>Now shs 1500 </p>
+            </div>
+            <div class="product-quantity-container">
+              <select class="selector" name="select" id="select3" title="select">
+                <option selected value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="2"> 3</option>
+                <option value="2"> 4</option>
+                <option value="2"> 5</option>
+                <option value="2"> 6</option>
+                <option value="2"> 7</option>
+                <option value="2"> 8</option>
+                <option value="2"> 9</option>
+              </select>
+            </div>
+  
+            <div class="added-to-cart">
+              <img src="../thumbnails/icons/checkmark.png" alt="">
+              added
+            </div>
+  
+            <button class="add-to-cart-btn" title="cart">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+
+      </div>
     </section>
-
-
-
 
     <script src="./main.js"></script>
   </body>
