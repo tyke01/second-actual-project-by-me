@@ -52,3 +52,29 @@ const categoryToggleMenu = () => {
 categoryToggle.addEventListener('click', categoryToggleMenu)
 
 
+const swiper = new Swiper('.swiper',
+    {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+
+        // direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+            clickable: true,
+            el: '.swiper-pagination'
+        },
+        breakpoints: {
+            700: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            }
+        }
+
+    })
