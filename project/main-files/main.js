@@ -52,7 +52,7 @@ const categoryToggleMenu = () => {
 categoryToggle.addEventListener('click', categoryToggleMenu)
 
 
-const swiper = new Swiper('.swiper',
+const swiper1 = new Swiper('.swiper-container-1',
     {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -60,8 +60,6 @@ const swiper = new Swiper('.swiper',
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-
-        // direction: 'horizontal',
         loop: true,
 
         pagination: {
@@ -75,6 +73,33 @@ const swiper = new Swiper('.swiper',
             1200: {
                 slidesPerView: 3
             }
+        },
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
         }
 
     })
+
+const swiper2 = new Swiper('.sample-slider', {
+    effect: "cards",
+    grabCursor: true,
+    loop: true,
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination'
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+})
+
+const swiper3 = new Swiper('.application-slider', {
+    autoplay: {
+        delay: 3000,
+    },
+    disableOnInteraction: true,
+    loop: true,
+
+})
