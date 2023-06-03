@@ -39,12 +39,13 @@
 
 /* theme */
 body.light-theme {
+  --form-input-color: #f8f9fa;
   --light-color: #3d3d3d;
   --light-color-alt: #495057;
   --primary-background-color: #fff;
   --secondary-background-color: #f1f1f1;
   --hover-light-color: #fff;
-  --transparent-dark-color: #f1f1f1;
+  --transparent-dark-color: #f1f1f111;
   --transparent-light-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -586,21 +587,21 @@ button {
   border: 1px solid var(--light-color-alt);
   background-color: var(--transparent-light-color);
 }
-.application-container{
+.application-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 }
-.application-slider .swiper-slide{
+.application-slider .swiper-slide {
   border-radius: 10px;
 }
-.application-slider{
+.application-slider {
   width: 60%;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.application-category{
+.application-category {
   height: 5rem;
   width: 15rem;
   position: absolute;
@@ -613,4 +614,70 @@ button {
   flex-direction: column;
   background-color: var(--transparent-dark-color);
   color: var(--light-color);
+}
+.footer-section {
+  background-color: var(--transparent-dark-color);
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: var(--form-input-color);
+}
+.company-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+.company-data .logo-section{
+  margin-bottom: 3rem;
+  text-decoration: underline;
+}
+
+.company-data .logo-text {
+  color: var(--form-input-color);
+  font-size: var(--font-size-md);
+}
+.company-description{
+  margin-bottom: 3rem;
+}
+.social-media {
+  margin: 2rem 0;
+}
+.social-media .list-link {
+  font-size: var(--font-size-md);
+  color: var(--form-input-color);
+  gap: var(--gap);
+}
+.social-media.list-link:hover {
+  color: var(--secondary-background-color);
+  border: 1px solid var(--light-color);
+}
+.right-cont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+.categories-continers{
+  display: flex;
+  flex-direction: column;
+}
+.footer-title{
+  margin-left: 10rem;
+  text-decoration: underline;
+  font-size: var(--font-size-md);
+}
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  color: var(--form-input-color);
+  align-items: flex-start;
+  margin-left: 10rem;
+
+}
+.footer-list .list-link{
+  color: var(--form-input-color);
+  transition: all .2s ease-in-out;
+}
+.footer-list .list-link:hover{
+  text-decoration: underline;
 }
