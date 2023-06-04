@@ -32,7 +32,7 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-sm);
-  color: var(--light-color);
+  color: var(--primary-background-color);
   background-color: var(--light-color);
   letter-spacing: 1px;
   transition: background-color 0.25s, color 0.25s;
@@ -86,14 +86,91 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.checkout-header{
+.checkout-header {
   height: 100%;
   width: 100%;
 }
-.checkout-content{
+.checkout-content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: aqua;
+}
+.checkout-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.order-summary {
+  width: 100%;
+  height: 20rem;
+}
+.cart-item-container {
+  border: 1px solid var(--form-input-color);
+  border-radius: 10px;
+  margin-right: 3rem;
+  margin: 8rem 1rem;
+}
+.delivery-date {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--extreme-dark-color);
+}
+.cart-item-detail-grid {
+  display: grid;
+  grid-template-columns: 30rem 1fr 1fr;
+  gap: var(--gap);
+  padding-left: 0.2rem;
+}
+.product-image {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.cart-items-details {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+.product-name {
+  font-size: var(--font-size-sm);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.product-price {
+  font-weight: 600;
+  color: rgb(75, 31, 31);
+  margin-bottom: 2rem;
+}
+.link-primary {
+  font-size: var(--font-size-sm);
+  color: rgb(18, 80, 250);
+}
+.link-primary:hover {
+  color: rgba(18, 80, 250, 0.8);
+  cursor: pointer;
+}
+
+.delivery-option-title {
+  font-weight: 510;
+}
+
+.delivery-options-details {
+  width: 70%;
+}
+.payment-summary {
+  margin-top: 8rem;
+  margin-left: 3rem;
+  border: 1px solid var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+}
+.payment-summary-row{
+  display: flex;
+}
+.payment-summary-title{
+  font-weight: 550;
 }

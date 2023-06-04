@@ -33,15 +33,13 @@
                   alt="no image"
                   class="checkout-img"
                 />
-                <h3 class="checkout-title">Shoe fire</h3>
+                <h3 class="checkout-title">HappyFeet</h3>
               </a>
             </div>
 
             <div class="checkout-mid-section">
               Checkout(
-                <a href="main.html" class="return-to-home">
-                  3 items
-                </a>
+              <a href="main.html" class="return-to-home"> 3 items </a>
               )
             </div>
 
@@ -55,5 +53,97 @@
         </div>
       </nav>
     </header>
+
+    <main class="main">
+      <section class="section checkout-grid">
+        <div class="order-summary">
+          <div class="cart-item-container">
+            <div class="delivery-date">Delivery date: Tuesday, june 15</div>
+
+            <div class="cart-item-detail-grid">
+              <img
+                src="../thumbnails/cool/cool-2.jpg"
+                alt=""
+                class="product-image"
+              />
+              <div class="cart-items-details">
+                <p class="product-name">white custom airforces - 2 pairs</p>
+                <p class="product-price">Ksh 2500</p>
+                <div class="product-quantity">
+                  <span> Quantity: <span class="quantity-label">2</span> </span>
+                  <span class="update-quantity-link link-primary">
+                    Update
+                  </span>
+                  <span class="delete-quantity-link link-primary">
+                    Delete
+                  </span>
+                </div>
+              </div>
+
+              <div class="delivery-options">
+                <p class="delivery-option-title">Choose a delivery option:</p>
+
+                <div class="delivery-options">
+                  <input
+                    type="radio"
+                    class="delivery-option-input"
+                    name="delivery-option-1"
+                    title="option 1"
+                  />
+                  <div class="delivery-options-details">
+                    <p class="delivery-option-date">Tuesday, june 15</p>
+                    <p class="delivery-option-price">FREE SHIPPING</p>
+                  </div>
+                </div>
+
+                <div class="delivery-options">
+                  <input
+                    type="radio"
+                    class="delivery-option-input"
+                    name="delivery-option-1"
+                    title="option 1"
+                  />
+                  <div>
+                    <div class="delivery-option-date">Tuesday, june 24</div>
+                    <div class="delivery-option-price">200 - Shipping</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-summary">
+          <p class="payment-summary-title">Order summary</p>
+
+          <div class="payment-summary-row">
+            <p>items (3)</p>
+            <p class="payment-money">200</p>
+          </div>
+
+          <div class="payment-summary-row">
+            <p>Shipping &amp; handling:</p>
+            <p class="payment-money">540</p>
+          </div>
+
+          <div class="payment-summary-row subtotal-row">
+            <p>total before taxes</p>
+            <p class="payment-money">150</p>
+          </div>
+
+          <div class="payment-summary-row">
+            <p>Estimated tax (10%)</p>
+            <p class="payment-money">100</p>
+          </div>
+
+          <div class="payment-summary-row">
+            <p>Order total:</p>
+            <p class="payment-money">3000</p>
+          </div>
+
+          <button class="place-order-button button-primary">place order</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
