@@ -195,9 +195,7 @@ button {
 .header.activated {
   box-shadow: 0 1px 0.5rem var(--transparent-light-color);
 }
-/* .menu > .list {
-  flex-direction: column;
-} */
+
 .menu.activated {
   box-shadow: 1 1px 1rem var(--transparent-light-color);
   opacity: 1;

@@ -103,3 +103,7 @@ const swiper3 = new Swiper('.application-slider', {
     loop: true,
 
 })
+const cartButton= selectElement('.ri-shopping-cart-line');
+cartButton.addEventListener('click', function() {
+    window.location.href= 'checkout.html';
+});

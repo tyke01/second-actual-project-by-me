@@ -100,23 +100,29 @@ ul {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-left: 1rem;
 }
 .order-summary {
   width: 100%;
   height: 20rem;
 }
+.order-summary-title{
+  font-size: var(--font-size-md);
+  margin-top: 9.5rem;
+  margin-left: 1rem;
+  font-weight: 600;
+}
 .cart-item-container {
-  border: 1px solid var(--form-input-color);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   margin-right: 3rem;
-  margin: 8rem 1rem;
+  margin: 2rem 1rem;
 }
 .delivery-date {
-  margin-bottom: 2rem;
-  margin-left: 2rem;
+  margin: 2rem 2rem;
   font-weight: 600;
   font-size: 2rem;
-  color: var(--extreme-dark-color);
+  color: green;
 }
 .cart-item-detail-grid {
   display: grid;
@@ -153,24 +159,85 @@ ul {
   color: rgba(18, 80, 250, 0.8);
   cursor: pointer;
 }
+.delivery-options{
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  margin-bottom: 1rem;
+}
+.delivery-option-input{
+  width: 20px;
+  height: 20px;
+  margin-top: 1.1rem;
+}
 
 .delivery-option-title {
-  font-weight: 510;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.delivery-option-date{
+  font-size: var(--font-size-sm);
+  color: green;
+  font-weight: 500;
+}
+.delivery-option-price{
+  font-size: var(--font-size-sm);
+  color: var(--extreme-dark-color);
 }
 
-.delivery-options-details {
-  width: 70%;
-}
-.payment-summary {
-  margin-top: 8rem;
-  margin-left: 3rem;
-  border: 1px solid var(--primary-background-color);
-  display: flex;
-  flex-direction: column;
-}
-.payment-summary-row{
-  display: flex;
-}
 .payment-summary-title{
   font-weight: 550;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.payment-summary {
+  margin-top: 14rem;
+  margin-right: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.payment-summary-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+.payment-money{
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.subtotal-row{
+  margin-top: 2rem;
+}
+
+.p1::before{
+  content: '';
+  background-color: var(--light-color-alt);
+  width: 40px;
+  height: 1px;
+  position: relative;
+  top: -1.5rem;
+}
+.p2{
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(178, 30, 30);
+}
+.place-order-button{
+  height: 4rem;
+  width: 30rem;
+  box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
+  margin: 1rem 2rem;
+  font-size: var(--font-size-sm);
+  color: var(--primary-background-color);
+  background-color: yellow;
+  transition: all .2s ease-in-out;
+}
+.place-order-button:hover{
+  background-color: rgb(221, 221, 39);
 }
