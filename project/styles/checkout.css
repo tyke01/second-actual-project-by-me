@@ -227,6 +227,9 @@ align-items: flex-end;
   color: rgb(178, 30, 30);
 }
 .place-order-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
   width: 30rem;
   box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.5);

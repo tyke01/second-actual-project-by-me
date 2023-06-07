@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracking</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles/orders-tracking.css" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../thumbnails/icons/icons8-shoes-1.png"
+    />
+    <!-- remix-icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="order-content">
+          <div class="order-left-section">
+            <a href="main.html" class="checkout-logo">
+              <img
+                src="../thumbnails/icons/icons8-shoe-2.png"
+                alt="no image"
+                class="order-img"
+              />
+              <h3 class="order-title">HappyFeet</h3>
+            </a>
+          </div>
+          <div class="mid-section">
+            <div class="search-form-container">
+              <form action="" class="form">
+                <input type="text" class="form-input" placeholder="search" />
+                <button class="btn form-btn" type="submit" title="submit">
+                  <i class="ri-search-line"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <button class="cart-btn" id="cart" title="Cart">
+            <i class="ri-shopping-cart-line"></i>
+          </button>
+          <div class="order-right-section">
+            <img
+              src="../thumbnails/icons/checkout-lock-icon copy.png"
+              alt="no image"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="order-tracking">
+          <a href="orders.html" class="back-to-orders-link">
+            View all orders
+          </a>
+          <div class="delivery-date">Arriving on Monday, june 13</div>
+          <div class="product-info">Blue jordans</div>
+          <div class="product-quantity">Quantity: 1</div>
+          <div class="products-image-cont">
+            <img src="../thumbnails/cool/cool-7.jpg" alt="no image" />
+          </div>
+          <div class="progress-label-container">
+            <div class="progress-label">Preparing</div>
+            <div class="progress-label current-status">Shipped</div>
+            <div class="progress-label">Delivered</div>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

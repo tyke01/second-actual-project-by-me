@@ -124,10 +124,29 @@ ul {
   cursor: pointer;
   background-color: #dfe0e1;
 }
+.order-right-section {
+  display: flex;
+  align-items: center;
+}
+.cart-btn {
+  width: 3rem;
+  height: auto;
+  margin-right: 2rem;
+  background-color: var(--light-color-alt);
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.cart-btn:hover {
+  transform: translateX(2px);
+  background-color: var(--form-input-color);
+}
 main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .orders-page {
   width: 80%;
@@ -162,6 +181,11 @@ main {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.con2 {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  width: 80%;
 }
 .product-image-container {
   width: 25rem;
@@ -216,9 +240,84 @@ main {
   border: none;
   background-color: var(--light-color-alt);
   box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.5);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.track-package-button:hover{
+.track-package-button:hover {
   background-color: #ced4da;
   cursor: pointer;
+}
+
+/* .......TRACKING...... */
+.main-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 9rem;
+}
+.order-tracking {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.back-to-orders-link {
+  margin-bottom: 5rem;
+  width: 20rem;
+  height: 4rem;
+  background-color: var(--light-color-alt);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00b4d8;
+  transition: all 0.4s ease-in-out;
+}
+.back-to-orders-link:hover {
+  background-color: #adb5bd;
+  transform: translateX(2px);
+}
+
+.order-tracking .delivery-date {
+  font-weight: 550;
+  font-size: var(--font-size-md);
+  margin-bottom: 0.3rem;
+}
+.order-tracking .product-quantity {
+  margin-bottom: 2rem;
+}
+.products-image-cont {
+  width: 35rem;
+  height: auto;
+  border-radius: 10px;
+}
+.products-image-cont img {
+  border-radius: 10px;
+}
+.progress-label-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.progress-label {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.current-status {
+  color: green;
+}
+.progress-bar-container {
+  width: 80%;
+  height: 2rem;
+  background-color: var(--form-input-color);
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 7rem;
+}
+.progress-bar {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+  border-radius: 2rem;
 }

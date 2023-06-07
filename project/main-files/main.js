@@ -107,3 +107,4 @@ const cartButton= selectElement('.ri-shopping-cart-line');
 cartButton.addEventListener('click', function() {
     window.location.href= 'checkout.html';
 });
+
