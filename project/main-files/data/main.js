@@ -100,6 +100,7 @@ cartButton.addEventListener('click', function () {
 
 const products = [
     {
+        id: 0001,
         Image: '../thumbnails/cool/cool-2.jpg',
         name: 'White custom airforces',
         rating: {
@@ -109,6 +110,7 @@ const products = [
         price: 2500
     },
     {
+        id: 0002,
         Image: '../thumbnails/cool/cool-3.jpg',
         name: 'Green Nikes',
         rating: {
@@ -118,6 +120,7 @@ const products = [
         price: 3999,
     },
     {
+        id: 0003,
         Image: '../thumbnails/cool/cool-5.jpg',
         name: 'White jordan 4',
         rating: {
@@ -127,6 +130,7 @@ const products = [
         price: 1500
     },
     {
+        id: 0004,
         Image: '../thumbnails/cool/cool-6.jpg',
         name: 'Exotic air jordans',
         rating: {
@@ -136,8 +140,9 @@ const products = [
         price: 4500,
     },
     {
+        id: 0005,
         Image: '../thumbnails/cool/cool-7.jpg',
-        name: 'Exotic air jordans',
+        name: 'Blue air jordans',
         rating: {
             stars: 5,
             count: 600
@@ -145,8 +150,9 @@ const products = [
         price: 4500,
     },
     {
+        id: 0006,
         Image: '../thumbnails/cool/cool-8.jpg',
-        name: 'Exotic air jordans',
+        name: 'Exotic air forces',
         rating: {
             stars: 5,
             count: 600
@@ -155,10 +161,10 @@ const products = [
     },
 ];
 
-let productsHTML='';
+let productsHTML = '';
 
 products.forEach((product) => {
-    productsHTML+= `
+    productsHTML += `
     <div class="products-container">
     <div class="product-image-container">
       <img
@@ -213,10 +219,44 @@ products.forEach((product) => {
         <img src="../thumbnails/icons/checkmark.png" alt="" />
         added
       </div>
-      <button class="add-to-cart-btn" title="cart">Add to cart</button>
+      <button 
+      class="add-to-cart-btn js-add-to-cart" 
+      title="cart" 
+      data-product-id= "${product.id}">
+      Add to cart
+      </button>
     </div>
   </div>
     `;
 });
 
-document.querySelector('.js-product-grid').innerHTML = productsHTML
+document.querySelector('.js-product-grid').innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+    button.addEventListener('click', () => {
+        // console.log(button.dataset.productName);
+
+
+        const productId = button.dataset.productId;
+
+
+        let matchingItem;
+        cart.forEach((item) => {
+            if (productId === item.productId) {
+                matchingItem = item;
+            }
+        });
+        if (matchingItem) {
+            matchingItem.quantity += 1
+        }
+        else {
+            cart.push({
+                productId: productId,
+                quantity: 1,
+            });
+        };
+        console.log(cart);
+    });
+});
+
+
