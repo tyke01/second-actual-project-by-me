@@ -13,14 +13,6 @@
   --secondary-background-color: #252830;
   --hover-light-color: var(--light-color);
   --hover-dark-color: var(--primary-background-color);
-  --gradient-color: linear-gradient(
-    115deg,
-    #4fcf70,
-    #fad638,
-    #a767e5,
-    #12bcfe,
-    #44ce7b
-  );
   --form-input-color: #f7f7f2;
   --transparent-light-color: rgba(255, 255, 255, 0.05);
   --transparent-dark-color: rgba(0, 0, 0, 0.75);
@@ -105,7 +97,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding-block: 1.5rem;
-  height: 7rem;
+  height: 7.5rem;
   background-color: var(--light-color-alt);
 }
 
@@ -119,8 +111,6 @@ button {
   width: 30rem;
   padding: 0.2rem;
   margin-right: 1rem;
-  /* opacity: 0;
-  transform: scale(0); */
   transition: opacity 0.25s ease-in;
 }
 
@@ -163,14 +153,12 @@ button {
 }
 .mid-section {
   display: flex;
-  flex-direction: row;
   width: 45rem;
 }
 .mid-section .list-link {
   font-size: var(--font-size-sm);
 }
 .menu {
-  position: relative;
   opacity: 0;
   transform: scale(0);
 }
@@ -181,7 +169,6 @@ button {
 .close-menu-icon {
   display: none;
 }
-
 .moon-icon {
   display: none;
 }
@@ -215,7 +202,6 @@ button {
   z-index: 15;
   display: flex;
   transition: opacity 0.5s;
-  /* margin-right: 10rem; */
 }
 .form {
   width: 25rem;
@@ -235,7 +221,6 @@ button {
 }
 .buttons {
   display: flex;
-  /* background-color: #a767e5; */
   font-size: 2rem;
   margin-top: 4.5rem;
   margin-left: 2rem;
@@ -259,7 +244,6 @@ button {
 }
 .cart-btn {
   color: var(--primary-background-color);
-  /* background-color: #12bcfe; */
   height: 2.5rem;
   margin-bottom: 0.8rem;
 }
@@ -271,62 +255,34 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-color-alt);
   margin-top: 4rem;
-  /* margin-left: 4rem; */
-  width: 22rem;
+  width: 25rem;
 }
 .return-txt {
   background-color: var(--light-color-alt);
   width: 100%;
   height: 3rem;
   color: var(--primary-background-color);
-  /* padding: 0 !important; */
-  padding-left: 1rem;
+
 }
 .returns:hover {
   border: 1px solid var(--primary-background-color);
 }
-
-.categories-btn {
-  position: absolute;
-  background-color: var(--light-color-alt);
-  padding: 0.71rem;
-  border-radius: 5px;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+.shopping-section {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rem;
 }
-.category-menu {
-  position: relative;
-  height: 10rem;
-  padding-top: 5rem;
-  opacity: 0;
-  transform: scale(0);
-  margin-left: 1rem;
-}
-.categories-btn .arrow-up {
-  display: none;
-}
-.categories-btn .arrow-down {
-  display: block;
-}
-.categories-btn.active .arrow-up {
-  display: block;
-}
-.categories-btn.active .arrow-down {
-  display: none;
-}
-.category-menu.active {
-  opacity: 1;
-  transform: scale(1);
-}
-/* products */
 .all-shopping-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 70%;
-  margin-left: 15rem;
   margin-right: 5rem;
+  margin-top: 60rem;
 }
 .products-container {
   width: 32rem;
@@ -471,7 +427,7 @@ button {
 }
 /* swiper-section */
 .swiper-header {
-  margin-left: 50rem;
+  margin-left: 15rem;
 }
 .swiper-head {
   position: relative;
@@ -488,7 +444,11 @@ button {
   left: -5rem;
 }
 .swiper-section {
-  margin-left: 6rem;
+  margin-left: 15rem;
+  width: 100%;
+}
+.cool-shoes {
+  margin-top: 90rem;
 }
 .official-shoes.swiper {
   width: 100%;
@@ -511,6 +471,7 @@ button {
   justify-content: center;
   margin-top: 10px;
 }
+
 .swiper-pagination-bullet {
   background-color: var(--light-color-alt);
 }
@@ -544,11 +505,12 @@ button {
   border-radius: 2rem;
 }
 .shop-by {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 35rem;
+  margin-left: 15rem;
   transition: all 0.4s ease-in-out;
 }
 .shop-by .swiper-header {
@@ -557,14 +519,14 @@ button {
 }
 .sample-slider {
   width: 100%;
-  transition: all 0.4s ease-in-out;
 }
-.sample-slider .swiper-slide {
+.sample-slider.swiper-slide {
   border-radius: 20px;
 }
 .sample-slider img {
   width: 100%;
   vertical-align: bottom;
+  border-radius: 20px;
 }
 .shop-category {
   height: 5rem;
@@ -584,6 +546,13 @@ button {
 .shop-category:hover {
   border: 1px solid var(--light-color-alt);
   background-color: var(--transparent-light-color);
+}
+.application-section {
+  margin-right: 10rem;
+  width: 80rem;
+}
+.application-container .swiper-header {
+  margin-left: 10rem;
 }
 .application-container {
   width: 100%;
@@ -615,8 +584,10 @@ button {
 }
 .footer-section {
   background-color: var(--transparent-dark-color);
+  width: 80rem;
 }
 .footer-container {
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--form-input-color);
@@ -626,7 +597,7 @@ button {
   flex-direction: column;
   margin-left: 3rem;
 }
-.company-data .logo-section{
+.company-data .logo-section {
   margin-bottom: 3rem;
   text-decoration: underline;
 }
@@ -635,7 +606,7 @@ button {
   color: var(--form-input-color);
   font-size: var(--font-size-md);
 }
-.company-description{
+.company-description {
   margin-bottom: 3rem;
 }
 .social-media {
@@ -650,32 +621,31 @@ button {
   color: var(--secondary-background-color);
   border: 1px solid var(--light-color);
 }
-.right-cont{
+.right-cont {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 }
-.categories-continers{
+.categories-continers {
   display: flex;
   flex-direction: column;
 }
-.footer-title{
+.footer-title {
   margin-left: 10rem;
   text-decoration: underline;
   font-size: var(--font-size-md);
 }
-.footer-list{
+.footer-list {
   display: flex;
   flex-direction: column;
   color: var(--form-input-color);
   align-items: flex-start;
   margin-left: 10rem;
-
 }
-.footer-list .list-link{
+.footer-list .list-link {
   color: var(--form-input-color);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.footer-list .list-link:hover{
+.footer-list .list-link:hover {
   text-decoration: underline;
 }

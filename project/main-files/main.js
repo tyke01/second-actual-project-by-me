@@ -41,17 +41,6 @@ else {
     localStorage.removeItem('current-theme')
 }
 
-
-const categoryToggle = selectElement('#category-toggle-btn');
-const categoryMenu = selectElement('#category-menu');
-
-const categoryToggleMenu = () => {
-    categoryMenu.classList.toggle('active');
-    categoryToggle.classList.toggle('active');
-};
-categoryToggle.addEventListener('click', categoryToggleMenu)
-
-
 const swiper1 = new Swiper('.swiper-container-1',
     {
         slidesPerView: 1,
@@ -67,6 +56,9 @@ const swiper1 = new Swiper('.swiper-container-1',
             el: '.swiper-pagination'
         },
         breakpoints: {
+            400: {
+                slidesPerView: 1
+            },
             700: {
                 slidesPerView: 2
             },
@@ -78,9 +70,7 @@ const swiper1 = new Swiper('.swiper-container-1',
             enabled: true,
             onlyInViewport: false,
         }
-
     })
-
 const swiper2 = new Swiper('.sample-slider', {
     effect: "cards",
     grabCursor: true,
@@ -103,8 +93,8 @@ const swiper3 = new Swiper('.application-slider', {
     loop: true,
 
 })
-const cartButton= selectElement('.ri-shopping-cart-line');
-cartButton.addEventListener('click', function() {
-    window.location.href= 'checkout.html';
+const cartButton = selectElement('.ri-shopping-cart-line');
+cartButton.addEventListener('click', function () {
+    window.location.href = 'checkout.html';
 });
 
