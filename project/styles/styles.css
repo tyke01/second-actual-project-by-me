@@ -444,11 +444,11 @@ button {
   left: -5rem;
 }
 .swiper-section {
-  margin-left: 15rem;
+  margin-left: 5rem;
   width: 100%;
 }
 .cool-shoes {
-  margin-top: 90rem;
+  margin-top: 70rem;
 }
 .official-shoes.swiper {
   width: 100%;
@@ -505,7 +505,7 @@ button {
   border-radius: 2rem;
 }
 .shop-by {
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -548,7 +548,7 @@ button {
   background-color: var(--transparent-light-color);
 }
 .application-section {
-  margin-right: 10rem;
+  margin-left: 10rem;
   width: 80rem;
 }
 .application-container .swiper-header {
@@ -584,7 +584,7 @@ button {
 }
 .footer-section {
   background-color: var(--transparent-dark-color);
-  width: 80rem;
+  width: 100%;
 }
 .footer-container {
   width: 95%;

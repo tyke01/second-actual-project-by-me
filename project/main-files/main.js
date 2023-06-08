@@ -98,3 +98,125 @@ cartButton.addEventListener('click', function () {
     window.location.href = 'checkout.html';
 });
 
+const products = [
+    {
+        Image: '../thumbnails/cool/cool-2.jpg',
+        name: 'White custom airforces',
+        rating: {
+            stars: 4.5,
+            count: 87
+        },
+        price: 2500
+    },
+    {
+        Image: '../thumbnails/cool/cool-3.jpg',
+        name: 'Green Nikes',
+        rating: {
+            stars: 4,
+            count: 102
+        },
+        price: 3999,
+    },
+    {
+        Image: '../thumbnails/cool/cool-5.jpg',
+        name: 'White jordan 4',
+        rating: {
+            stars: 3,
+            count: 200
+        },
+        price: 1500
+    },
+    {
+        Image: '../thumbnails/cool/cool-6.jpg',
+        name: 'Exotic air jordans',
+        rating: {
+            stars: 5,
+            count: 600
+        },
+        price: 4500,
+    },
+    {
+        Image: '../thumbnails/cool/cool-7.jpg',
+        name: 'Exotic air jordans',
+        rating: {
+            stars: 5,
+            count: 600
+        },
+        price: 4500,
+    },
+    {
+        Image: '../thumbnails/cool/cool-8.jpg',
+        name: 'Exotic air jordans',
+        rating: {
+            stars: 5,
+            count: 600
+        },
+        price: 4500,
+    },
+];
+
+let productsHTML='';
+
+products.forEach((product) => {
+    productsHTML+= `
+    <div class="products-container">
+    <div class="product-image-container">
+      <img
+        src="${product.Image}"
+        alt=""
+        class="product-image"
+      />
+    </div>
+    <div class="product-specs">
+      <div class="product-name">
+        <p>${product.name}</p>
+      </div>
+      <div class="items">
+        <p class="items-left">42 items left</p>
+        <div class="item-bar">
+          <div class="items-rem wd-1"></div>
+        </div>
+      </div>
+      <div class="product-rating-container">
+        <img
+          src="../thumbnails/ratings/rating-${product.rating.stars * 10}.png"
+          alt="no image"
+          class="product-rating-stars"
+        />
+        <p class="rating-count">${product.rating.count}</p>
+      </div>
+      <div class="offers">
+        <p class="offer-1">price : 2800</p>
+      </div>
+      <div class="product-price">
+        <p>Now shs ${product.price}</p>
+      </div>
+      <div class="product-quantity-container">
+        <select
+          class="selector"
+          name="select"
+          id="select1"
+          title="select"
+        >
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+          <option value="2">5</option>
+          <option value="2">6</option>
+          <option value="2">7</option>
+          <option value="2">8</option>
+          <option value="2">9</option>
+        </select>
+      </div>
+      <div class="added-to-cart">
+        <img src="../thumbnails/icons/checkmark.png" alt="" />
+        added
+      </div>
+      <button class="add-to-cart-btn" title="cart">Add to cart</button>
+    </div>
+  </div>
+    `;
+});
+
+document.querySelector('.js-product-grid').innerHTML = productsHTML
