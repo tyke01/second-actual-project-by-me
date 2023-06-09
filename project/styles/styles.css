@@ -250,6 +250,13 @@ button {
 .cart-btn:hover {
   border: 1px solid var(--secondary-background-color);
 }
+.cart-quantity{
+  position: absolute;
+  right: 6rem;
+  top: 3.6rem;
+  color: var(--primary-background-color);
+  font-size: var(--font-size-xsm);
+}
 
 .returns {
   display: flex;
