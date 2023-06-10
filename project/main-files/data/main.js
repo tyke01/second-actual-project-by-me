@@ -100,7 +100,7 @@ cartButton.addEventListener('click', function () {
 
 const products = [
     {
-        id: 0001,
+        id: '0001',
         Image: '../thumbnails/cool/cool-2.jpg',
         name: 'White custom airforces',
         rating: {
@@ -110,7 +110,7 @@ const products = [
         price: 2500
     },
     {
-        id: 0002,
+        id: '0002',
         Image: '../thumbnails/cool/cool-3.jpg',
         name: 'Green Nikes',
         rating: {
@@ -120,7 +120,7 @@ const products = [
         price: 3999,
     },
     {
-        id: 0003,
+        id: '0003',
         Image: '../thumbnails/cool/cool-5.jpg',
         name: 'White jordan 4',
         rating: {
@@ -130,7 +130,7 @@ const products = [
         price: 1500
     },
     {
-        id: 0004,
+        id: '0004',
         Image: '../thumbnails/cool/cool-6.jpg',
         name: 'Exotic air jordans',
         rating: {
@@ -140,7 +140,7 @@ const products = [
         price: 4500,
     },
     {
-        id: 0005,
+        id: '0005',
         Image: '../thumbnails/cool/cool-7.jpg',
         name: 'Blue air jordans',
         rating: {
@@ -150,7 +150,7 @@ const products = [
         price: 4500,
     },
     {
-        id: 0006,
+        id: '0006',
         Image: '../thumbnails/cool/cool-8.jpg',
         name: 'Exotic air forces',
         rating: {
@@ -234,7 +234,6 @@ document.querySelector('.js-product-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
-        // console.log(button.dataset.productName);
 
 
         const productId = button.dataset.productId;
@@ -266,5 +265,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
     });
 });
+
+
 
 
