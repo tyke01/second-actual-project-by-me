@@ -428,6 +428,24 @@ button {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
+.js-added-to-cart-text{
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+}
+.checkmark{
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.js-added-to-cart-text.activated{
+  transition: all .4s ease-in-out;
+  opacity: 1;
+  transform: scale(1) translateY(-5rem);
+
+}
 .add-to-cart-btn:hover {
   cursor: pointer;
   background-color: var(--extreme-dark-color);

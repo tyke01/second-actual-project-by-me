@@ -225,6 +225,14 @@ products.forEach((product) => {
       data-product-id= "${product.id}">
       Add to cart
       </button>
+      <p class="js-added-to-cart-text" id="added-text">
+        Added
+      <img
+        src="../thumbnails/icons/checkmark.png"
+        alt="no image"
+        class="checkmark"
+        />
+      </p>
     </div>
   </div>
     `;
@@ -234,11 +242,7 @@ document.querySelector('.js-product-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
-
-
         const productId = button.dataset.productId;
-
-
         let matchingItem;
         cart.forEach((item) => {
             if (productId === item.productId) {
@@ -254,18 +258,32 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
                 quantity: 1,
             });
         };
-
         let cartQuantity = 0;
-
         cart.forEach((item) => {
             cartQuantity += item.quantity
         });
-
         document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 
     });
 });
 
+const addToCart = selectElement('#added-text')
 
+document.querySelectorAll('.add-to-cart-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+        addToCart.classList.toggle('activated')
 
+    })
+})
 
+/*const addToCartBtn = selectElement('.add-to-cart-btn');
+const toggleCart = () => {
+}
+addToCartBtn.addEventListener('click', toggleCart);*/
+/*const menuToggleIcon = selectElement('#menu-toggle-icon');
+const mobileMenu = selectElement('#menu');
+const toggleMenu = () => {
+    mobileMenu.classList.toggle('activated');
+    menuToggleIcon.classList.toggle('activated');
+}
+menuToggleIcon.addEventListener('click', toggleMenu);*/
